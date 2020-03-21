@@ -39,6 +39,37 @@
             height: 150px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+
+        #alert{
+            border-radius: 25px;
+            height: 45px;
+            width: 350px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 15px;
+            font-family: myfont;
+            padding-top: 3px;
+            animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+
+    50% {
+        background-color: rgba(255,255,255,.5);
+        color: black;
+    }
+
+    100% {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+}
     </style>
 </head>
 
@@ -48,15 +79,12 @@
 
 
     <div id="main">
-        <div id="st">15.3.2020</div>
+        <div id="st">#CORONA</div>
         <br/>
-        <img src="https://github.com/Daniel-Raj/Carmel-Ministries-Project/raw/master/photos/1.jpeg" style="height:500px"/>
+        <button id="alert">Important Message from our Pr.Robert Simon!!!<br/>Click here to watch</button>
+        
         <br/>
-        <div id="st">@2pm</div>
-        <br/>
-        <img src="https://github.com/Daniel-Raj/Carmel-Ministries-Project/raw/master/photos/2.jpeg" style="height:200px"/>
-        <br/>
-        <div id="st" style="width: 200px">On Sundays @2pm</div>
+        <div id="st" style="width: 250px">Every Sunday @2pm</div>
    
         <ul>
                 <b>First Sunday</b> : YOUTH SUNDAY (TEENS AND TWENTIES CLUB)<br/>
@@ -109,7 +137,11 @@
         <br /> -->
 
     </div>
-
+    <script>
+        document.getElementById("alert").onclick = function(){
+            location.href = "https://www.youtube.com/watch?v=0e5XifT-frs";
+        }
+    </script>
     <!-- last Updated on Feb.:.22.:.2020 -->
 </body>
 
