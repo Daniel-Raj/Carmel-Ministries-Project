@@ -24,7 +24,6 @@
             background-color: rgba(0, 0, 0, 0.15);
             transition: height 1s;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            position: relative;
             z-index: -1;
         }
 
@@ -39,7 +38,7 @@
 
         #main {
             border-radius: 25px;
-            padding: 7px 7px 7px 15px;
+            padding: 7px 10px 7px 10px;
         }
 
         #images {
@@ -50,16 +49,16 @@
 
         #alert {
             border-radius: 25px;
-            height: 37px;
-            width: 250px;
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             border: none;
+            width: 100px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             font-size: 15px;
             font-family: myfont;
             padding-top: 3px;
             animation: blink 1s infinite;
+            position: absolute;
         }
 
         @keyframes blink {
@@ -89,10 +88,12 @@
     <div id="main">
         <div id="st" style="width: 190px">CARMEL VBS 2020</div>
         <br>
+        <button id="alert">Live now</button>
+        <br><br>
         <b>Carmel VBS 2020</b> is inviting you to a scheduled
         <b>Zoom</b> meeting.
-        <br> Topic: Carmel VBS 2020 Day 2
-        <br> Time: May 11, 2020 05:00 PM India
+        <br> Topic: Carmel VBS 2020 Day 3
+        <br> Time: May 12, 2020 05:00 PM India
         <br>
         <br>
 
@@ -169,11 +170,7 @@
         <br /> -->
 
     </div>
-    <script>
-        document.getElementById("alert").onclick = function () {
-            location.href = "https://www.youtube.com/watch?v=0e5XifT-frs";
-        }
-    </script>
+
     <!-- last Updated on Feb.:.22.:.2020 -->
 </body>
 
