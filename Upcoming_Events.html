@@ -88,12 +88,17 @@
     <div id="main">
         <div id="st" style="width: 190px">CARMEL VBS 2020</div>
         <br>
-        <button id="alert">Live now</button>
-        <br><br>
+        <div id="timing">
+            <button id="alert">Live now</button>
+            <br>
+            <br>
+        </div>
         <b>Carmel VBS 2020</b> is inviting you to a scheduled
         <b>Zoom</b> meeting.
-        <br> Topic: Carmel VBS 2020 Day 3
-        <br> Time: May 12, 2020 05:00 PM India
+        <br> Topic: Carmel VBS 2020 Day
+        <span id="day"></span>
+        <br> Time: May
+        <span id="date"></span>, 2020 05:00 PM India
         <br>
         <br>
 
@@ -170,8 +175,18 @@
         <br /> -->
 
     </div>
-
-    <!-- last Updated on Feb.:.22.:.2020 -->
+    <script>
+        var da = new Date();
+        var d = da.getHours();
+        var di = da.getDate();
+        document.getElementById("date").innerHTML = di;
+        document.getElementById("day").innerHTML = di % 10;
+        if (d == 17 || d == 18)
+            document.getElementById("timing").style.display = "block";
+        else
+            document.getElementById("timing").style.display = "none";
+    </script>
+    <!-- last Updated on May.:.13.:.2020 -->
 </body>
 
 </html>
