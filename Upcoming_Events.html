@@ -46,35 +46,32 @@
             height: 150px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-
-        #alert {
-            border-radius: 25px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            font-size: 15px;
-            font-family: myfont;
-            padding-top: 3px;
-            animation: blink 1s infinite;
+        #logo{
             position: relative;
             width: 300px;
             height: 200px;
             overflow: hidden;
         }
-        #text 
-        {
+
+        #alert {
+           background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 15px;
+            font-family: myfont;
+            padding-top: 3px;
+            animation: blink 1s infinite;
             position: absolute;
-            left: 40%;
             top: 90%;
+            width: 100%;
         }
+        
 
         @keyframes blink {
             0% {
                 background-color: rgba(0, 0, 0, 0.5);
-                
-                opacity: 0;
+                color: white;
                 
             }
 
@@ -86,8 +83,7 @@
 
             100% {
                 background-color: rgba(0, 0, 0, 0.5);
-                
-                opacity: 1;
+                color:white;
             }
         }
     </style>
@@ -101,9 +97,9 @@
     <div id="main">
         <div id="st" style="width: 190px">CARMEL VBS 2020</div>
         <br>
-        <div id="alert">
+        <div id="logo">
             <img id="images" style="height:200px" src="photos/vbslogo.jpeg">
-            <span id="text">Live Now</span>
+            <button id="alert">Live Now</button>
         </div>
         <br>
         <b>Carmel VBS 2020</b> is inviting you to a scheduled
