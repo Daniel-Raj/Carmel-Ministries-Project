@@ -52,29 +52,42 @@
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             border: none;
-            width: 100px;
+            
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             font-size: 15px;
             font-family: myfont;
             padding-top: 3px;
             animation: blink 1s infinite;
+            position: relative;
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+        }
+        #text 
+        {
             position: absolute;
+            left: 40%;
+            top: 90%;
         }
 
         @keyframes blink {
             0% {
                 background-color: rgba(0, 0, 0, 0.5);
-                color: white;
+                
+                opacity: 0;
+                
             }
 
             50% {
                 background-color: rgba(255, 255, 255, .5);
                 color: black;
+                
             }
 
             100% {
                 background-color: rgba(0, 0, 0, 0.5);
-                color: white;
+                
+                opacity: 1;
             }
         }
     </style>
@@ -88,11 +101,10 @@
     <div id="main">
         <div id="st" style="width: 190px">CARMEL VBS 2020</div>
         <br>
-        <!-- <div id="timing">
-            <button id="alert">Live now</button>
-            <br>
-            <br>
-        </div> -->
+        <div id="alert">
+            <img id="images" src="photos/vbslogo.jpeg">
+            <span id="text">Live Now</span>
+        </div>
         <b>Carmel VBS 2020</b> is inviting you to a scheduled
         <b>Zoom</b> meeting.
         <br> Topic: Carmel VBS 2020 Final Day
@@ -145,12 +157,13 @@
         <!-- <div id="st" >March</div>
         <ul></ul>
         <br />
-        <div id="st" >April</div>
+        <div id="divst" >April</div>
         <ul></ul>
-        <br />
+        <br />-->
         <div id="st" >May</div>
-        <ul></ul>
+        <img id="images" src="https://github.com/Daniel-Raj/Carmel-Ministries-Project/raw/master/photos/vbslogo.jpeg">
         <br />
+        <!--
         <div id="st" >June</div>
         <ul></ul>
         <br />
