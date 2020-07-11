@@ -31,7 +31,7 @@
         /* template for heading style */
 
         .mybox-model {
-            margin: 5% auto;
+            margin: 3% auto;
             border-radius: 50px;
             border: 1px solid rgba(255, 255, 255, 0.5);
             padding: 7px 3px 3px 3px;
@@ -42,31 +42,13 @@
 
         }
 
-        /* lockdown div */
-
-        .lockdown-note,
-        .sunday-events {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 10px;
-
-        }
-
-        .lockdown-heading {
-            width: 100px;
-            margin: 5% auto;
-        }
-
-        .lockdown-content {
-            text-align: center;
-            line-height: 2;
-        }
-
         /* Sunday Message - Info */
 
         .sunday-message {
             text-align: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding-top: 5%;
+            border-radius: 35px;
         }
 
         .sunday-message-heading,
@@ -77,9 +59,30 @@
         .sunday-message-image {
             height: 500px;
             width: 300px;
-            margin: 5% 0 0;
+            margin: 5% 0 0 0;
 
         }
+
+        /* lockdown div */
+
+        .lockdown-note,
+        .sunday-events {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px;
+            border-radius: 35px;
+        }
+
+        .lockdown-heading {
+            width: 100px;
+            margin: 5% auto;
+        }
+
+        .lockdown-content {
+            text-align: center;
+            line-height: 2;
+            
+        }
+
 
         /* month wise events */
 
@@ -94,6 +97,7 @@
         }
 
         /* credits */
+
         .ending {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.2);
@@ -106,21 +110,22 @@
     <!-- contents to the Future Events page in CM app -->
     <div class="main-div">
 
-        <div class="lockdown-note">
-            <div class="mybox-model lockdown-heading">PRAY</div>
-            <div class="lockdown-content">
-                <b>PRAY - Its our only hope.</b>
-                <br>
-                <b>To watch the live and the videos of CCA</b>
-                <i>Go back to the live page and click the required button.</i>
-            </div>
-        </div>
-
         <div class="sunday-message">
             <div class="mybox-model sunday-message-heading" style="width: 150px">12.7.2020</div>
             <img class="sunday-message-image" src="https://github.com/Daniel-Raj/Carmel-Ministries-Project/raw/master/photos/SundayMessage.jpeg"
             />
         </div>
+
+        <div class="lockdown-note">
+            <div class="mybox-model lockdown-heading">PRAY</div>
+            <div class="lockdown-content">
+                <b>PRAY - Its our only hope.</b><br>
+                <b>To watch the live and the videos of CCA</b><br>
+                <i>Go back to the live page and click the required button.</i>
+            </div>
+        </div>
+
+
 
         <div class="sunday-events">
             <div class="mybox-model sunday-events-heading" style="width: 150px"> Sundays @2pm</div>
